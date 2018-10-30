@@ -10,7 +10,7 @@ public class ReadFromFile {
 		FileInputStream fis = null;
 		DataInputStream dis = null;
 		try {
-			fis = new FileInputStream("files.txt");//created the low level stream
+			fis = new FileInputStream("file.txt");//created the low level stream
 			dis = new DataInputStream(fis);//created high level stream
 			int integer1 = dis.readInt();
 			double double1 = dis.readDouble();
