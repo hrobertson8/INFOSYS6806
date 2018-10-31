@@ -17,21 +17,21 @@ public class HannahsATM {
 		System.out.println("1: View Current Balance");
 		System.out.println("2: Withdraw");
 		System.out.println("3: Deposit");
-		
+
 		reader = new BufferedReader(new InputStreamReader(System.in));
 		int s = Integer.parseInt(reader.readLine());
 		switch (s) {
 		case 1:
 			currentBalance();
 			break;
-			
+
 		case 2:
 			withdraw();
-			break; 
-		
+			break;
+
 		case 3:
 			deposit();
-			break; 		
+			break;
 		}
 	}
 
@@ -44,7 +44,7 @@ public class HannahsATM {
 		System.out.println("Previous balance: " + currentBalance);
 		int newBalance = s + currentBalance;
 		System.out.println("New balance: " + newBalance);
-		
+
 		writeToFile(newBalance);
 	}
 
@@ -57,13 +57,14 @@ public class HannahsATM {
 		System.out.println("Previous balance: " + currentBalance);
 		int newBalance = currentBalance - s;
 		System.out.println("New balance: " + newBalance);
-		
+
 		writeToFile(newBalance);
+		System.out.println();
 	}
 
 	public static void currentBalance() throws Exception {
 		int currentBalance = readFromFile();
-		System.out.println("Current balance: " + currentBalance);	
+		System.out.println("Current balance: " + currentBalance);
 	}
 
 	static int readFromFile() {
@@ -78,24 +79,23 @@ public class HannahsATM {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
-		} 
+		}
 		return integer1;
 	}
-	
+
 	static void writeToFile(int newBalance) {
 		FileOutputStream fos = null;
 		DataOutputStream dos = null;
 
 		try {
 			fos = new FileOutputStream("myfile.txt");
-			dos = new DataOutputStream(fos);					
-			dos.writeInt(newBalance); 
-		
+			dos = new DataOutputStream(fos);
+			dos.writeInt(newBalance);
+
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
-		} 
+		}
 	}
 }
-

@@ -6,6 +6,7 @@ public class Sofa extends Furniture {
 	public void computePrice(int price) {
 		System.out.println("$" + price);
 	}
+
 	@Override
 	public void getCompanyName() {
 		super.getCompanyName();

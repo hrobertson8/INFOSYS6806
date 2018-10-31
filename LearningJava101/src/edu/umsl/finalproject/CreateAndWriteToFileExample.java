@@ -16,7 +16,7 @@ public class CreateAndWriteToFileExample {
 
 		try {
 			fos = new FileOutputStream("files.txt"); // created a low level stream
-			dos = new DataOutputStream(fos); // created a high level stream by feeding in 								  				//the low level stream
+			dos = new DataOutputStream(fos); // created a high level stream by feeding in //the low level stream
 			dos.writeInt(10); // writing bytes
 			dos.writeDouble(783);
 			dos.writeBoolean(true); // requires only one byte

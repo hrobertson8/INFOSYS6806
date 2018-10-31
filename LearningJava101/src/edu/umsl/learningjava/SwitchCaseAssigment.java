@@ -32,19 +32,19 @@ public class SwitchCaseAssigment {
 		case 6:
 			value = "Number Dialed is 6, MNO";
 			break;
-			
+
 		case 7:
 			value = "Number Dialed is 7, PQRS";
 			break;
-			
+
 		case 8:
 			value = "Number Dialed is 8, TUV";
 			break;
-			
+
 		case 9:
 			value = "Number Dialed is 9, WXYZ";
 			break;
-			
+
 		case 0:
 			value = "Number Dialed is 0, +";
 			break;

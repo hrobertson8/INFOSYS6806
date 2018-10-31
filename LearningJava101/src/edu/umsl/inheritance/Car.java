@@ -1,7 +1,7 @@
 package edu.umsl.inheritance;
 
 public class Car {
-	
+
 	String color;
 
 	public String getColor() {
@@ -11,7 +11,5 @@ public class Car {
 	public void setColor(String color) {
 		this.color = color;
 	}
-	
-	
 
 }

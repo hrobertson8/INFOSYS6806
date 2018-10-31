@@ -11,6 +11,5 @@ public class Honda extends Car {
 	public void setMaxSpeed(int maxSpeed) {
 		this.maxSpeed = maxSpeed;
 	}
-	
-	
+
 }

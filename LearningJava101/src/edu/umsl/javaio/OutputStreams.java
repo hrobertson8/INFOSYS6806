@@ -13,11 +13,11 @@ public class OutputStreams {
 
 		try {
 			fos = new FileOutputStream("final.txt");
-			dos = new DataOutputStream(fos); 	
+			dos = new DataOutputStream(fos);
 
-			dos.writeInt(10); 
+			dos.writeInt(10);
 			dos.writeChars("Hey");
-			
+
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {

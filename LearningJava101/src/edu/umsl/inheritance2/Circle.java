@@ -1,6 +1,6 @@
 package edu.umsl.inheritance2;
 
-import edu.umsl.learningjava4.Shape;
+import edu.umsl.inheritance2.Shape;
 
 public class Circle extends Shape {
 

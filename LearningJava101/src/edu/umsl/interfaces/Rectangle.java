@@ -7,7 +7,7 @@ public class Rectangle implements Shape {
 		int length = 5;
 		int width = 8;
 		double area = length * width;
-	
+
 		System.out.println("Rectangle Area: " + area);
 	}
 }

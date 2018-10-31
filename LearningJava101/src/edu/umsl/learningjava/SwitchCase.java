@@ -31,7 +31,7 @@ public class SwitchCase {
 			break;
 
 		}
-		
+
 		System.out.println(value);
 
 	}

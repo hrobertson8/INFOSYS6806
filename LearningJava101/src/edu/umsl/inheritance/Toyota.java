@@ -1,7 +1,7 @@
 package edu.umsl.inheritance;
 
 public class Toyota extends Car {
-	
+
 	int maxSpeed;
 
 	public int getMaxSpeed() {
@@ -11,7 +11,5 @@ public class Toyota extends Car {
 	public void setMaxSpeed(int maxSpeed) {
 		this.maxSpeed = maxSpeed;
 	}
-	
-	
 
 }
